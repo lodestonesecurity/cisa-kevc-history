@@ -3831,12 +3831,12 @@
     "cveID": "CVE-2014-1776",
     "vendorProject": "Microsoft",
     "product": "Internet Explorer",
-    "vulnerabilityName": "Microsoft Internet Explorer Use-After-Free Vulnerability",
+    "vulnerabilityName": "Microsoft Internet Explorer Memory Corruption Vulnerability",
     "dateAdded": "2022-01-28",
-    "shortDescription": "Microsoft Internet Explorer 6 - 11 contains a use-after-free vulnerability which can allow for arbitrary code execution or denial of service.",
+    "shortDescription": "Microsoft Internet Explorer contains a memory corruption vulnerability that allows remote attackers to execute code in the context of the current user.",
     "requiredAction": "Apply updates per vendor instructions.",
     "dueDate": "2022-07-28",
-    "notes": ""
+    "notes": "https://learn.microsoft.com/en-us/security-updates/SecurityBulletins/2014/ms14-021?redirectedfrom=MSDN"
   },
   {
     "cveID": "CVE-2014-6271",
@@ -9865,17 +9865,6 @@
     "requiredAction": "The impacted product is end-of-life and should be disconnected if still in use.",
     "dueDate": "2023-04-20",
     "notes": "https://learn.microsoft.com/en-us/security-updates/securitybulletins/2013/ms13-055"
-  },
-  {
-    "cveID": "CVE-2014-1776",
-    "vendorProject": "Microsoft",
-    "product": "Internet Explorer",
-    "vulnerabilityName": "Microsoft Internet Explorer Memory Corruption Vulnerability",
-    "dateAdded": "2023-03-30",
-    "shortDescription": "Microsoft Internet Explorer contains a memory corruption vulnerability that allows remote attackers to execute code in the context of the current user.",
-    "requiredAction": "The impacted product is end-of-life and should be disconnected if still in use.",
-    "dueDate": "2023-04-20",
-    "notes": "https://learn.microsoft.com/en-us/security-updates/SecurityBulletins/2014/ms14-021?redirectedfrom=MSDN"
   },
   {
     "cveID": "CVE-2017-7494",
