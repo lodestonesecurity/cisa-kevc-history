@@ -9953,5 +9953,16 @@
     "requiredAction": "Apply updates per vendor instructions.",
     "dueDate": "2023-04-20",
     "notes": "https://developer.arm.com/Arm%20Security%20Center/Mali%20GPU%20Driver%20Vulnerabilities"
+  },
+  {
+    "cveID": "CVE-2022-27926",
+    "vendorProject": "Zimbra",
+    "product": "Collaboration (ZCS)",
+    "vulnerabilityName": "Zimbra Collaboration (ZCS) Cross-Site Scripting (XSS) Vulnerability",
+    "dateAdded": "2023-04-03",
+    "shortDescription": "Zimbra Collaboration Suite (ZCS) contains a cross-site scripting vulnerability by allowing an endpoint URL to accept parameters without sanitizing.",
+    "requiredAction": "Apply updates per vendor instructions.",
+    "dueDate": "2023-04-24",
+    "notes": "https://wiki.zimbra.com/wiki/Security_Center"
   }
 ]
