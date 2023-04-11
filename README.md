@@ -6,6 +6,16 @@ Every day tracking exploits from https://www.cisa.gov/known-exploited-vulnerabil
 
 Source JSON: https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json
 
+## Analysing the results
 
+Use [git-history](https://github.com/simonw/git-history) to load the history into SQLite:
 
+```sh
+git-history file vulns.db known_exploited_vulnerabilities.json \
+            --id cveID \
+            --ignore-duplicate-ids \
+            --full-versions \
+            --convert 'json.loads(content)["vulnerabilities"]'
+```
 
+You can use tools like [datasette](https://datasette.io/) to browse the data.
