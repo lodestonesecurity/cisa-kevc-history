@@ -1,4 +1,4 @@
-name: Scrape latest Cisa Data
+name: Scrape latest Cisa Vulnerabilities Data
 
 on:
   push:
