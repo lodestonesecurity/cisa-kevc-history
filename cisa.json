@@ -10041,5 +10041,16 @@
     "requiredAction": "Apply updates per vendor instructions.",
     "dueDate": "2023-05-01",
     "notes": "https://support.apple.com/en-us/HT213720, https://support.apple.com/en-us/HT213721"
+  },
+  {
+    "cveID": "CVE-2023-28252",
+    "vendorProject": "Microsoft",
+    "product": "Windows",
+    "vulnerabilityName": "Microsoft Windows Common Log File System (CLFS) Driver Privilege Escalation Vulnerability",
+    "dateAdded": "2023-04-11",
+    "shortDescription": "Microsoft Windows Common Log File System (CLFS) driver contains an unspecified vulnerability that allows for privilege escalation.",
+    "requiredAction": "Apply updates per vendor instructions.",
+    "dueDate": "2023-05-02",
+    "notes": "https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2023-28252"
   }
 ]
