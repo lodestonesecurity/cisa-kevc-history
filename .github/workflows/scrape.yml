@@ -14,7 +14,6 @@ jobs:
       uses: actions/checkout@v2
     - name: Fetch latest data from Cisa
       run: |-
-        curl https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json | jq ".vulnerabilities" > cisa.json
         curl -O https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json
     - name: Commit and push if it changed
       run: |-
