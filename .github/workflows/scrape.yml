@@ -17,7 +17,17 @@ jobs:
         curl -O https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json
     - name: Check if Valid JSON
       run: |-
-        cat known_exploited_vulnerabilities.json | jq --validate
+        json_data=```cat known_exploited_vulnerabilities.json```
+        set +e
+        retval=$(jq -re '""' <<<"${json_data}" 2>&1)
+        if [ -z "${retval}" ]; then
+          echo "JSON validation successful"
+        else
+          echo "ERROR: jq - ${retval}"
+          exit ${retval}
+        fi
+
+
     - name: Commit and push if it changed
       run: |-
         git config user.name "Automated"
