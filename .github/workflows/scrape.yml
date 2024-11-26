@@ -10,11 +10,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Check out this repo
-      uses: actions/checkout@v2
+      uses: actions/checkout@v4
     - name: Fetch latest data from Cisa
       run: |-
-        curl -O https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json
+        curl --fail-with-body -O https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json
+        jq '.vulnerabilities[].cveID' < known_exploited_vulnerabilities.json | grep -q "CVE"
     - name: Commit and push if it changed
+      if: ${{ github.ref == 'refs/heads/main' }}
       run: |-
         git config user.name "Automated"
         git config user.email "actions@users.noreply.github.com"
